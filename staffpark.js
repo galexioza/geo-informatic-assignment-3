@@ -8,7 +8,7 @@ import View from "ol/View";
 import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer.js';
 import {Vector as VectorSource} from 'ol/source.js';
 import {Select} from 'ol/interaction'
-
+import {Stroke, Style} from "ol/style";
 
 var route = new Feature();
 
@@ -22,7 +22,7 @@ var coordinates2 = [
     [174.695425,-36.734150]
 ];
 
-var massey = fromLonLat([174.700697,-36.73331]);
+var massey = fromLonLat([174.702251,-36.733211]);
 
 var geometry = new LineString(coordinates2);
 geometry.transform('EPSG:4326', 'EPSG:3857');
@@ -30,15 +30,17 @@ route.setGeometry(geometry);
 
 var view = new View({
     center: massey,
-    zoom: 15
+    zoom: 14
 });
 
-// var vector = new VectorLayer({
-//     source: source
-// });
-//
-// vect
-console.log('call js2 ');
+var lightStroke = new Style({
+    stroke: new Stroke({
+        color: [9, 123, 215, 0.6],
+        width: 3
+        // lineDash: [4,8],
+        // lineDashOffset: 6
+    })
+});
 
 var map = new Map({
 
@@ -50,9 +52,9 @@ var map = new Map({
         }),
         new VectorLayer({
             source: new VectorSource({
-                features: [route],
-                width: 5
-            })}
+                features: [route]
+            }),
+            style:[lightStroke]}
         )
     ],
     loadTilesWhileAnimating: true,
