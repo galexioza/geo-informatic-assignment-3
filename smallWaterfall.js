@@ -12,8 +12,8 @@ import {fromLonLat} from "ol/proj";
 
 
 var iconFeature = new Feature({
-    geometry: new Point([19447018.67, -4402359.28]),
-    name: 'main-stream-waterfall'
+    geometry: new Point([19447144.68,-4402475.41]),
+    name: 'tributary-stream-waterfall'
 });
 
 var iconStyle = new Style({
@@ -34,6 +34,7 @@ var vectorSource = new VectorSource({
 var vectorLayer = new VectorLayer({
     source: vectorSource
 });
+
 
 var originLayer  = new TileLayer({
     source: new OSM()
