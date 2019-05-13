@@ -1,0 +1,17 @@
+.indexDiv {
+    background-image: url('./static/massey.jpg');
+    height: 100vh;
+    margin: 0px;
+    padding:0px;
+    background-repeat: no-repeat;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.divfooter {
+    margin: 0px !important;
+    padding:0px;
+    width:100%;
+    bottom:0px;
+}
