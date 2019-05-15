@@ -1,0 +1,93 @@
+.indexDiv {
+    background-image: url('./static/massey.jpg');
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.divfooter {
+    margin: 0px !important;
+    padding: 0px;
+    width: 100%;
+    bottom: 0px;
+}
+
+.navbar-fixed-left {
+    width: 140px;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+    float: none; /* Cancel default li float: left */
+    width: 139px;
+}
+
+.navbar-fixed-left + .container {
+    padding-left: 160px;
+}
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+    margin-top: -50px;
+    margin-left: 140px;
+}
+
+.nav-left-customize {
+    margin-top: 5%;
+    float: left;
+    height: 70%;
+}
+
+.nav-left-desc {
+    color: #d69d35;
+    margin: 5px;
+}
+
+.mapDiv {
+    width: 80%;
+    float: right;
+    margin-right: 3%;
+    background: #4f4f4f;
+    height: 80%;
+    margin-top: 3%;
+    border-radius: 8px;
+}
+
+.mapCustom {
+    background: whitesmoke;
+    float: left;
+    margin: 3%;
+    width: 72%;
+    height: 90%;
+}
+
+.detailDiv {
+    float: right;
+
+    width:20%;
+}
+
+.detailHref {
+margin-top: 5%;
+}
+
+.imageDiv {
+    background-image:url('./static/test1.jpeg');
+    height:70%;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin:auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-custom {
+    margin-top: 30px;
+    margin-right: 40px;
+}

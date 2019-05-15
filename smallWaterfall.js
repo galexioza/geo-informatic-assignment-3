@@ -41,7 +41,7 @@ var originLayer  = new TileLayer({
     source: new OSM()
 });
 
-var massey = fromLonLat([174.696049,-4402475.41]);
+var massey = fromLonLat([174.697288,-36.736063]);
 
 var map = new Map({
     layers: [originLayer, vectorLayer],
