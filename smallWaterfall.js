@@ -12,9 +12,10 @@ import {fromLonLat} from "ol/proj";
 
 
 var iconFeature = new Feature({
-    geometry: new Point([19447018.67, -4402359.28]),
-    name: 'main-stream-waterfall'
+    geometry: new Point([19447163.27,-4402475.41]),
+    name: 'tributary-stream-waterfall'
 });
+
 
 var iconStyle = new Style({
     image: new Icon( ({
@@ -35,11 +36,12 @@ var vectorLayer = new VectorLayer({
     source: vectorSource
 });
 
+
 var originLayer  = new TileLayer({
     source: new OSM()
 });
 
-var massey = fromLonLat([174.696049,-36.736853]);
+var massey = fromLonLat([174.697288,-36.736063]);
 
 var map = new Map({
     layers: [originLayer, vectorLayer],
