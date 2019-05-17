@@ -65,6 +65,8 @@ var map = new Map({
 
 
 var typeSelect = document.getElementById('type');
+var typeSelect1 = document.getElementById('type1');
+var button = document.getElementById('select_button');
 
 //test coordinates
 var coordinates2 = [
@@ -82,11 +84,14 @@ var coordinates2 = [
 
 var l2;
 
-function addInteractions(typeSelect) {
+var typeSelection = "recreation"; //default value
+var typeSelection1 = "recreation"; //default value
+
+function addInteractions() {
     map.removeLayer(l2);
-    console.log('current type is '+typeSelect.value.trim());
+    console.log('current type is ' + typeSelect.value.trim());
     console.log("recreation" == typeSelect.value.trim());
-    if(typeSelect.value == 'recreation') {
+    if (typeSelection == 'recreation' && typeSelection1 == 'staff') {
         l2 = new VectorLayer({
             source: new VectorSource({
                 features: [route],
@@ -96,27 +101,45 @@ function addInteractions(typeSelect) {
         });
         console.log('add layers');
         map.addLayer(l2);
-    }
-    else {
-        var route1 = new Feature();
-        var geometry = new LineString(coordinates2);
-        geometry.transform('EPSG:4326', 'EPSG:3857');
-        route1.setGeometry(geometry);
-        l2 = new VectorLayer({
-            source: new VectorSource({
-                features: [route1],
-                width: 5
-            }),
-            style: [darkStroke]
-        });
-        console.log('add layers');
-        map.addLayer(l2);
+    } else {
+        // var route1 = new Feature();
+        // var geometry = new LineString(coordinates2);
+        // geometry.transform('EPSG:4326', 'EPSG:3857');
+        // route1.setGeometry(geometry);
+        // l2 = new VectorLayer({
+        //     source: new VectorSource({
+        //         features: [route1],
+        //         width: 5
+        //     }),
+        //     style: [darkStroke]
+        // });
+        // console.log('add layers');
+        // map.addLayer(l2);
+
     }
 }
 
+function setValueByType() {
+
+}
 
 typeSelect.onchange = function () {
-    addInteractions(typeSelect);
+    typeSelection = typeSelect.value;
+    console.log('get value' + typeSelection);
+};
+
+typeSelect1.onchange = function () {
+
+    typeSelection1 = typeSelect1.value;
+    console.log('get value 1' + typeSelection1);
+};
+
+button.onclick = function () {
+    console.log('enter in button');
+    addInteractions();
+
+    typeSelect.value = typeSelection;
+    typeSelect1.value = typeSelection1;
 };
 
 addInteractions(typeSelect);
