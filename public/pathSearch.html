@@ -19,10 +19,11 @@
             <a class="navbar-brand" href="index.html" style="color:white">Massey Water System</a>
         </div>
         <ul class="nav navbar-nav" style="font: 400 20px/1.2 'Merienda One', Helvetica, sans-serif;">
-            <li><a href="recreationpak.html">Path Search</a></li>
+            <li><a href="pathSearch.html">Path Search</a></li>
             <li><a href="smallWaterfall.html">Waterfall Research</a></li>
             <li><a href="bigLake.html">Massey Lakes</a></li>
         </ul>
+
     </div>
 </nav>
 <div class="navbar navbar-inverse navbar-fixed-left nav-left-customize">
@@ -32,14 +33,32 @@
     <div class="nav-left-desc">
         Wanna explore Oteha Stream? Find a parking place, we will provide you recommendations.
     </div>
-    <div style="color:whitesmoke;margin:5px;font-size: 20px;font: 400 20px/1.2 'Merienda One', Helvetica, sans-serif;">I
-        will park at:
+
+    <div class="form-inline">
+        <div style="color:whitesmoke;margin:5px;font-size: 20px;font: 400 20px/1.2 'Merienda One', Helvetica, sans-serif;">
+            I want to go:
+        </div>
+        <select style="margin:10px;" id="type">
+            <option value="waterfallA">waterfallA</option>
+            <option value="waterfallB">waterfallB</option>
+            <option value="waterfallC">waterfallC</option>
+            <option value="bridge">bridge</option>
+            <option value="stream">stream</option>
+            <option value="lake">lake</option>
+
+        </select>
+
+        <div style="color:whitesmoke;margin:5px;font-size: 20px;font: 400 20px/1.2 'Merienda One', Helvetica, sans-serif;">
+            I will park at:
+        </div>
+        <select style="margin:10px;" id="type1">
+            <option value="parkingA">parkingA</option>
+            <option value="parkingB">parkingB</option>
+            <option value="parkingC">parkingC</option>
+            <option value="parkingD">parkingD</option>
+        </select>
+        <button type="button" class="btn btn-info btn-lg" id="select_button" style="margin-left:10px;margin-top:10px;">submit</button>
     </div>
-    <ul class="nav navbar-nav">
-        <li><button type="button" class="btn btn-info" style="margin:5px;background: whitesmoke;"><a href="recreationpak.html">Gym park</a></button></li>
-        <li><button type="button" class="btn btn-info" style="margin:5px;background: whitesmoke;"><a href="staffpark.html">Staff park</a></button></li>
-        <li><button type="button" class="btn btn-info" style="margin:5px;background: whitesmoke;"><a href="accparking.html">Student park</a></button></li>
-    </ul>
 </div>
 
 
@@ -130,7 +149,7 @@
         </div>
     </div>
 </div>
-<script src="./staffpark.js"></script>
+<script src="./pathSearch.js"></script>
 </body>
 <footer>
     <div class="navbar navbar-inverse divfooter" style="position: fixed;bottom: 0px;">
