@@ -87,7 +87,71 @@ margin-top: 5%;
     background-position: center;
 }
 
+.imageDiv1 {
+    background-image:url('./static/massey.jpg');
+    height:70%;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin:auto;
+    background-size: cover;
+    background-position: center;
+}
+.imageDiv2 {
+    background-image:url('./static/bridge.jpg');
+    height:70%;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin:auto;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(180deg);
+}
+.imageDiv3 {
+    background-image:url('./static/widest_part.jpg');
+    height:70%;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin:auto;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(180deg);
+}
+.imageDiv4 {
+    background-image:url('./static/waterfall_a.jpg');
+    height:70%;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin:auto;
+    background-size: cover;
+    background-position: center;
+}
+.imageDiv5 {
+    background-image:url('./static/waterfall_b.jpg');
+    height:70%;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin:auto;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(180deg);
+}
+.imageDiv6 {
+    background-image:url('./static/waterfall_c.jpg');
+    height:70%;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin:auto;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(180deg);
+}
+
 .btn-custom {
     margin-top: 30px;
     margin-right: 40px;
 }
+
+
+
+
+

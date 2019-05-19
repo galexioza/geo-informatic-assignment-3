@@ -137,7 +137,8 @@ function addInteractions() {
             console.log('test my coordinate');
             var coordinates2 = [
                 [174.695391, -36.736632],
-                [174.700445, -36.736422],
+                [174.699822, -36.736368],
+                [174.699923, -36.734833],
                 [174.700179, -36.733313],
                 [174.700152, -36.732486],
 
@@ -489,12 +490,188 @@ function addInteractions() {
         console.log('test my coordinate');
         var coordinates2 = [
             [174.7001, -36.73772],
+            [174.701554, -36.736112],
+            [174.703802, -36.735046],
+            [174.705109, -36.734121],
+
+        ];
+        var route1 = new Feature();
+        var geometry = new LineString(coordinates2);
+        geometry.transform('EPSG:4326', 'EPSG:3857');
+        route1.setGeometry(geometry);
+
+        l2 = new VectorLayer({
+            source: new VectorSource({
+                features: [route1],
+                width: 5
+            }),
+            style: [darkStroke]
+        });
+        console.log('add layers');
+        map.addLayer(l2);
+    } else if(typeSelection == 'waterfallC' && typeSelection1 == 'parkingB' ){
+        console.log('test my coordinate');
+        var coordinates2 = [
+            [174.7001, -36.73772],
+            [174.701554, -36.736112],
+            [174.703802, -36.735046],
+            [174.703313, -36.734494],
+
+        ];
+        var route1 = new Feature();
+        var geometry = new LineString(coordinates2);
+        geometry.transform('EPSG:4326', 'EPSG:3857');
+        route1.setGeometry(geometry);
+
+        l2 = new VectorLayer({
+            source: new VectorSource({
+                features: [route1],
+                width: 5
+            }),
+            style: [darkStroke]
+        });
+        console.log('add layers');
+        map.addLayer(l2);
+    } else if(typeSelection == 'waterfallC' && typeSelection1 == 'parkingC' ){
+        console.log('test my coordinate');
+        var coordinates2 = [
+            [174.7001, -36.73772],
+            [174.698278, -36.735446],
+            [174.698050, -36.734300],
+            [174.699773, -36.733720],
+            [174.700152, -36.732486],
+
+        ];
+        var route1 = new Feature();
+        var geometry = new LineString(coordinates2);
+        geometry.transform('EPSG:4326', 'EPSG:3857');
+        route1.setGeometry(geometry);
+
+        l2 = new VectorLayer({
+            source: new VectorSource({
+                features: [route1],
+                width: 5
+            }),
+            style: [darkStroke]
+        });
+        console.log('add layers');
+        map.addLayer(l2);
+    } else if(typeSelection == 'waterfallC' && typeSelection1 == 'parkingD' ){
+        console.log('test my coordinate');
+        var coordinates2 = [
+            [174.7001, -36.73772],
+            [174.701544, -36.736095],
+            [174.703415, -36.735367],
+            [174.705967, -36.733991],
+            [174.706153, -36.733532],
+            [174.704963, -36.732455],
+
+        ];
+        var route1 = new Feature();
+        var geometry = new LineString(coordinates2);
+        geometry.transform('EPSG:4326', 'EPSG:3857');
+        route1.setGeometry(geometry);
+
+        l2 = new VectorLayer({
+            source: new VectorSource({
+                features: [route1],
+                width: 5
+            }),
+            style: [darkStroke]
+        });
+        console.log('add layers');
+        map.addLayer(l2);
+    } else if(typeSelection == 'lake' && typeSelection1 == 'parkingA' ){
+        console.log('test my coordinate');
+        var coordinates2 = [
+            [174.696281, -36.736564],
             [174.697892, -36.736842],
             [174.699171, -36.736356],
             [174.699914, -36.736388],
             [174.701554, -36.736112],
             [174.703802, -36.735046],
             [174.705109, -36.734121],
+
+        ];
+        var route1 = new Feature();
+        var geometry = new LineString(coordinates2);
+        geometry.transform('EPSG:4326', 'EPSG:3857');
+        route1.setGeometry(geometry);
+
+        l2 = new VectorLayer({
+            source: new VectorSource({
+                features: [route1],
+                width: 5
+            }),
+            style: [darkStroke]
+        });
+        console.log('add layers');
+        map.addLayer(l2);
+    } else if(typeSelection == 'lake' && typeSelection1 == 'parkingB' ){
+        console.log('test my coordinate');
+        var coordinates2 = [
+            [174.696281, -36.736564],
+            [174.697892, -36.736842],
+            [174.699171, -36.736356],
+            [174.699914, -36.736388],
+            [174.701554, -36.736112],
+            [174.703802, -36.735046],
+            [174.703313, -36.734494],
+
+        ];
+        var route1 = new Feature();
+        var geometry = new LineString(coordinates2);
+        geometry.transform('EPSG:4326', 'EPSG:3857');
+        route1.setGeometry(geometry);
+
+        l2 = new VectorLayer({
+            source: new VectorSource({
+                features: [route1],
+                width: 5
+            }),
+            style: [darkStroke]
+        });
+        console.log('add layers');
+        map.addLayer(l2);
+    } else if(typeSelection == 'lake' && typeSelection1 == 'parkingC' ){
+        console.log('test my coordinate');
+        var coordinates2 = [
+            [174.696281, -36.736564],
+            [174.698278, -36.735446],
+            [174.698050, -36.734300],
+            [174.699773, -36.733720],
+            [174.700152, -36.732486],
+
+
+        ];
+        var route1 = new Feature();
+        var geometry = new LineString(coordinates2);
+        geometry.transform('EPSG:4326', 'EPSG:3857');
+        route1.setGeometry(geometry);
+
+        l2 = new VectorLayer({
+            source: new VectorSource({
+                features: [route1],
+                width: 5
+            }),
+            style: [darkStroke]
+        });
+        console.log('add layers');
+        map.addLayer(l2);
+    } else if(typeSelection == 'lake' && typeSelection1 == 'parkingD' ){
+        console.log('test my coordinate');
+        var coordinates2 = [
+            [174.696281, -36.736564],
+            [174.696460, -36.736652],
+            [174.697897, -36.736855],
+            [174.699871, -36.736407],
+            [174.701544, -36.736095],
+            [174.703415, -36.735367],
+            [174.705967, -36.733991],
+            [174.706153, -36.733532],
+            [174.704963, -36.732455],
+
+
 
         ];
 
