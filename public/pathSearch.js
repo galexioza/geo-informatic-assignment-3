@@ -72,7 +72,7 @@ var button = document.getElementById('select_button');
 
 var l2;
 
-var typeSelection = "waterfall1"; //default value
+var typeSelection = "waterfallA"; //default value
 var typeSelection1 = "parkingA"; //default value
 
 function addInteractions() {
